@@ -149,19 +149,116 @@
     <hr />
 
     <section id="contact">
-      <h2>Contact</h2>
-    </section>
+      <div class="col-md-3 text-center">
+        <h2>Contact</h2>
+        <i class="fas fa-phone"></i>
+        <p>070-xxxx-xxxx</p>
+        <i class="fas fa-envelope"></i>
+        <p>admin@haiokane.com</p>
 
-    <hr />
-
-    <footer id="footer">
-      <div class="container-fluid">
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
         <i class="fas fa-envelope"></i>
         <i class="fas fa-home"></i>
         <i class="fas fa-building"></i>
+
+        <div class="col-md-9 mb-md-0 mb-5">
+          <form
+            id="contact-form"
+            name="contact-form"
+            action="mail.php"
+            method="POST"
+          >
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                  />
+                  <label for="name" class="">Your name</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                  />
+                  <label for="email" class="">Your email</label>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="form-control"
+                  />
+                  <label for="subject" class="">Subject</label>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea
+                    type="text"
+                    id="message"
+                    name="message"
+                    rows="2"
+                    class="form-control md-textarea"
+                  ></textarea>
+                  <label for="message">Your message</label>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+          </form>
+
+          <div class="btn btn-primary">
+            <a class="">Send</a>
+          </div>
+          <div class="status"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <div class="row">
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+      </div>
+    </section>
+
+    <hr />
+
+    <footer id="footer">
+      <div class="container-fluid">
         <p>© Copyright 2020 HaiLuong</p>
       </div>
     </footer>
