@@ -1,1 +1,27 @@
 
+
+/* social */
+.social{
+    justify-content: center;
+    display: flex;
+}
+
+.social a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 58px;
+    cursor: pointer;
+    background: #314652;
+    border-radius: 50%;
+}
+
+.social a:hover{
+    transform: scale(1.2) rotate(0.05turn);
+    background: #2e74b6;
+}
