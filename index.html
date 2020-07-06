@@ -13,6 +13,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- Optional JavaScript -->
@@ -39,46 +43,56 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
     <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;900&family=Ubuntu&family=Sacramento&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <section id="title">
-      <!-- Nav Bar -->
-
-      <nav
-        class="navbar fixed-top navbar-light"
-        style="background-color: #e3f2fd;"
-      >
-        <a class="navbar-brand" href="#">Hai's Site</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#Favorite">Favorite</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#More">More</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+      <!-- NavBar -->
+      <nav class="menu">
+        <div class="inner-width">
+          <a href="/" class="logo">hailuong</a>
+          <button class="menu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Favorite</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
       </nav>
+
+      <!-- Home -->
+      <section id="home">
+        <div class="inner-width">
+          <div class="content">
+            <h1>Hi I'm</h1>
+            <div class="sm">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+              <a href="#"><i class="fas fa-home"></i></a>
+            </div>
+            <div class="btt">
+              <a href="#">Contact me</a>
+              <a href="#">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Profile -->
       <div id="profile">
@@ -95,14 +109,6 @@
               I'm Vietnamese. Now, I'm living in Japan. I love this country.
             </p>
           </div>
-        </div>
-        <!-- Social Icon -->
-        <div class="social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-          <a href="#"><i class="fas fa-home"></i></a>
         </div>
       </div>
     </section>
@@ -185,8 +191,11 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img src="images/gallery-1.png" class="card-img-top card-image" alt="">
-                </svg>
+                <img
+                  src="images/gallery-1.png"
+                  class="card-img-top card-image"
+                  alt=""
+                />
                 <div class="card-body">
                   <h5 class="card-title">Coming Soon Page</h5>
                   <p class="card-text">
@@ -195,9 +204,25 @@
                   <div
                     class="d-flex justify-content-between align-items-center"
                   ></div>
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                  <a href="https://www.youtube.com/watch?v=HW-YYAdzL0w&t=3s" class="btn btn-lg btn-outline-info" target="_blank" rel="Comming Soon Page">View</a>
-                  <a href="https://kairuon.github.io/commingsoon/" class="btn btn-lg btn-outline-info" target="_blank" rel="Comming Soon Page">Preview</a>
+                  <div
+                    class="btn-group"
+                    role="group"
+                    aria-label="Basic example"
+                  >
+                    <a
+                      href="https://www.youtube.com/watch?v=HW-YYAdzL0w&t=3s"
+                      class="btn btn-lg btn-outline-info"
+                      target="_blank"
+                      rel="Comming Soon Page"
+                      >View</a
+                    >
+                    <a
+                      href="https://kairuon.github.io/commingsoon/"
+                      class="btn btn-lg btn-outline-info"
+                      target="_blank"
+                      rel="Comming Soon Page"
+                      >Preview</a
+                    >
                   </div>
                 </div>
               </div>
@@ -205,8 +230,11 @@
 
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img src="images/gallery-2.png" class="card-img-top card-image" alt="">
-                </svg>
+                <img
+                  src="images/gallery-2.png"
+                  class="card-img-top card-image"
+                  alt=""
+                />
                 <div class="card-body">
                   <h5 class="card-title">Cool Side Navigation Buttons</h5>
                   <p class="card-text">
@@ -215,15 +243,20 @@
                   <div
                     class="d-flex justify-content-between align-items-center"
                   ></div>
-                  <a href="https://kairuon.github.io/navi/" class="btn btn-lg btn-outline-info" target="_blank" rel="Cool Side Navigation Buttons">Preview</a>
+                  <a
+                    href="https://kairuon.github.io/navi/"
+                    class="btn btn-lg btn-outline-info"
+                    target="_blank"
+                    rel="Cool Side Navigation Buttons"
+                    >Preview</a
+                  >
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img src="images/Gallery-1.png" class="card-img-top" alt="">
-                </svg>
+                <img src="images/Gallery-1.png" class="card-img-top" alt="" />
                 <div class="card-body">
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
